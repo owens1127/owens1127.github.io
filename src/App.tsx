@@ -8,7 +8,7 @@ const App = () => {
     <HashRouter>
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/resume.pdf" Component={EPortfolio} />
+        <Route path="/engw3302-eportfolio" Component={EPortfolio} />
       </Routes>
     </HashRouter>
   );
