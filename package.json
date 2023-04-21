@@ -1,6 +1,6 @@
 {
   "name": "owensimpson.github.io",
-  "homepage": "https://owensimpson.github.io/",
+  "homepage": "",
   "version": "0.1.0",
   "scripts": {
     "predeploy": "npm run build",
