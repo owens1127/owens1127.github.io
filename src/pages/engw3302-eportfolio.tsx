@@ -8,7 +8,7 @@ const EPortfolio = ({}: EPortfolioProps) => {
   return (
     <>
       <Helmet>
-        <title>E-Portfolio - ENGW3302 | Owen Simpson</title>
+        <title>E-Portfolio (ENGW3302) - Owen Simpson</title>
       </Helmet>
       <main>
         <h1 className="title">
