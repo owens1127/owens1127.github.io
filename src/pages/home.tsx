@@ -16,7 +16,7 @@ const Home = () => {
         <div className="nav-buttons">
           <a
             className="nav-link"
-            href="/resume.pdf"
+            href="/engw3302-eportfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
