@@ -1,4 +1,4 @@
-import Contact from "../components/Contact";
+import Contact, { ContactTypes } from "../components/Contact";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -10,8 +10,10 @@ const Home = () => {
       <main className="home">
         <h1 className="header">Owen Simpson</h1>
         <p className="about-me">
-          Hi, I'm Owen, a second year Computer Science student at Northeastern
-          University.
+          Hi, I'm Owen! I am Computer Science student from <em>Boston, MA</em>{" "}
+          currently studying at Northeastern University with an expected
+          graduation in May 2025. I am an experienced web developer with a
+          passion for creating innovative and user-friendly applications.
         </p>
         <div className="nav-buttons">
           <a
@@ -20,7 +22,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="nav-botton">Résumé</button>
+            <button className="nav-botton magnifiable">Résumé</button>
           </a>
 
           <button className="nav-botton not-ready">Projects</button>
@@ -28,12 +30,12 @@ const Home = () => {
         <Contact
           socials={[
             {
-              type: "Email",
+              type: ContactTypes.Email,
               url: "mailto:owensimpson1127@gmail.com",
               display: "owensimpson1127@gmail.com",
             },
             {
-              type: "LinkedIn",
+              type: ContactTypes.LinkedIn,
               url: "https://www.linkedin.com/in/owen-s-simpson/",
               display: "linkedin.com/in/owen-s-simpson",
             },

@@ -5,12 +5,10 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "redeploy": "npx gh-pages-clean gh-pages -d build && npm run deploy",
     "postdeploy": "git push origin main",
+    "redeploy": "npx gh-pages-clean gh-pages -d build && npm run deploy",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

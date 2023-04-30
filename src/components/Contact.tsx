@@ -1,8 +1,13 @@
 import React from "react";
 
+export enum ContactTypes {
+  LinkedIn = "LinkedIn",
+  Email = "Email",
+}
+
 interface ContactProps {
   socials: {
-    type: string;
+    type: ContactTypes;
     url: string;
     display: string;
   }[];
@@ -11,21 +16,21 @@ interface ContactProps {
 const Contact = ({ socials }: ContactProps) => {
   return (
     <div className="contact-container">
-      <h3>Contact Me.</h3>
+      <h3>Contact Me</h3>
       {socials.map(({ type, url, display }, key) => (
-        <p key={key}>
-          <i>
-            <b>{`${type} > `}</b>
-            <a
-              className="nav-link social-link"
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {display}
-            </a>
-          </i>
-        </p>
+        <a
+          key={key}
+          className="nav-link social-link"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={`/icons/${type}.svg`}
+            className="social-icon magnifiable"
+            alt={display}
+          />
+        </a>
       ))}
     </div>
   );
