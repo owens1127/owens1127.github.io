@@ -1,8 +1,6 @@
-import React from "react";
-
 export enum ContactTypes {
-  LinkedIn = "LinkedIn",
-  Email = "Email",
+  LinkedIn = "linkedin",
+  Email = "email",
 }
 
 interface ContactProps {
