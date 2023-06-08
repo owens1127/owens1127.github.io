@@ -1,0 +1,41 @@
+.project-card {
+  background-color: rgba(239, 253, 255, 0.706);
+  border-radius: 15px;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 30ch;
+  max-width: 45ch;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  margin: 0 1em;
+}
+
+.project-description {
+  line-height: 1.4em;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-url {
+  padding: 0.5em;
+  border-radius: 1ch;
+
+  background-color: rgba(172, 216, 255, 0.516);
+
+  border: 1px solid var(--navy);
+}
+
+.project-url a {
+  font-size: 1.4rem;
+  color: rgb(9, 1, 82);
+}

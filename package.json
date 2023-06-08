@@ -1,7 +1,7 @@
 {
   "name": "owensimpson.github.io",
   "homepage": "https://owensimpson.github.io",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

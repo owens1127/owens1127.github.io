@@ -1,0 +1,20 @@
+.project-page {
+  margin-bottom: 1em;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 0 20vw;
+
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .projects {
+    margin: 0 4vw;
+  }
+}

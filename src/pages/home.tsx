@@ -1,3 +1,4 @@
+import "./home.css";
 import Contact, { ContactTypes } from "../components/Contact";
 import { Helmet } from "react-helmet";
 
@@ -16,16 +17,13 @@ const Home = () => {
           passion for creating innovative and user-friendly applications.
         </p>
         <div className="nav-buttons">
-          <a
-            className="nav-link"
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="nav-botton magnifiable">Résumé</button>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="nav-button magnifiable">Résumé</button>
           </a>
 
-          <button className="nav-botton not-ready">Projects</button>
+          <a href="/#/projects">
+            <button className="nav-button magnifiable">Projects</button>
+          </a>
         </div>
         <Contact
           socials={[

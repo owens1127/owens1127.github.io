@@ -1,3 +1,4 @@
+import "./styles/Contact.css";
 export enum ContactTypes {
   LinkedIn = "linkedin",
   Email = "email",
@@ -18,7 +19,7 @@ const Contact = ({ socials }: ContactProps) => {
       {socials.map(({ type, url, display }, key) => (
         <a
           key={key}
-          className="nav-link social-link"
+          className="social-link"
           href={url}
           target="_blank"
           rel="noopener noreferrer"
