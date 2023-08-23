@@ -1,12 +1,14 @@
 .project-card {
-  background-color: rgba(239, 253, 255, 0.706);
-  border-radius: 15px;
-
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 30ch;
   max-width: 45ch;
   padding: 1.5rem;
+
+  background-color: rgba(239, 253, 255, 0.706);
+  border-radius: 15px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   display: flex;
   flex-direction: column;
@@ -26,16 +28,18 @@
   justify-content: space-around;
 }
 
-.project-url {
-  padding: 0.5em;
-  border-radius: 1ch;
+.project-button {
+  padding: 0.7em;
+  border-radius: 999px;
 
   background-color: rgba(172, 216, 255, 0.516);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
   border: 1px solid var(--navy);
 }
 
-.project-url a {
-  font-size: 1.4rem;
+.project-button a {
+  font-size: 1.125rem;
   color: rgb(9, 1, 82);
 }

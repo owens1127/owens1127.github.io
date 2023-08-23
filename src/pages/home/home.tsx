@@ -1,12 +1,13 @@
+import Contact from "../../components/Contact/Contact";
+import { ContactTypes } from "../../components/Contact/types";
 import "./home.css";
-import Contact, { ContactTypes } from "../components/Contact";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Owen Simpson</title>
+        <title>Home | Owen Simpson</title>
       </Helmet>
       <main className="home">
         <h1 className="header">Owen Simpson</h1>

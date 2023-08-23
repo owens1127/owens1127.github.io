@@ -1,11 +1,11 @@
-import "./styles/Nav.css";
+import "./Nav.css";
 
 export type NavItem = {
   label: string;
   href: string;
 };
 
-const Nav = ({ items }: { items: NavItem[] }) => {
+export default function Nav({ items }: { items: NavItem[] }) {
   return (
     <nav className="nav">
       {items.map((item, idx) => (
@@ -17,6 +17,4 @@ const Nav = ({ items }: { items: NavItem[] }) => {
       ))}
     </nav>
   );
-};
-
-export default Nav;
+}

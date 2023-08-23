@@ -1,19 +1,20 @@
-import "./styles/ProjectCard.css";
+import "./ProjectCard.css";
 
 export type ProjectData = {
   name: string;
   description: string;
   url?: string;
   repository: string;
+  images?: string[];
 };
 
 const ProjectCard = ({
-  project: { name, description, url, repository },
+  project: { name, description, url, repository, images },
 }: {
   project: ProjectData;
 }) => {
   return (
-    <div className="project-card">
+    <article className="project-card">
       <h2 className="project-title">{name}</h2>
       <div className="project-description">
         {description.split("\n").map((paragraph, idx) => (
@@ -22,15 +23,20 @@ const ProjectCard = ({
       </div>
       <div className="project-links">
         {url && (
-          <span className="project-url">
+          <div className="project-button">
             <a href={url}>View Project</a>
-          </span>
+          </div>
         )}
-        <span className="project-url">
+        <div className="project-button">
           <a href={repository}>Repository</a>
-        </span>
+        </div>
+        {images && (
+          <div className="project-button">
+            <></>
+          </div>
+        )}
       </div>
-    </div>
+    </article>
   );
 };
 

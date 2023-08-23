@@ -8,7 +8,7 @@
   {
     "name": "RaidHub",
     "description": "RaidHub is a fullstack collaborative project I worked on with a team of 3. This website serves as a centralized platform for Destiny 2 players, providing them with the ability to view leaderboards for Worlds First races and track their raid statistics sourced from the Bungie API. Inspired by a similar site, we sought to deliver a faster experience.\n I was resposibile for the front end work. By leveraging the power of TypeScript, I ensured strong typing and reliable code throughout the development process. With React, I crafted intuitive and responsive user interfaces, while Next.js optimized performance and offered server-side rendering capabilities. RaidHub is designed to empower Destiny 2 communities by enabling players to showcase their achievements, monitor their progress, and engage in healthy competition. It was a rewarding experience to contribute to this project and create a valuable resource for the community.",
-    "url": "https://raid-hub-website.vercel.app/",
+    "url": "https://alpha.raidhub.app/",
     "repository": "https://github.com/Raid-Hub/RaidHub-Website"
   },
   {

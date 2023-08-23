@@ -1,7 +1,9 @@
 import "./projects.css";
 import { Helmet } from "react-helmet";
-import ProjectCard, { ProjectData } from "../components/ProjectCard";
 import { useEffect, useState } from "react";
+import ProjectCard, {
+  ProjectData,
+} from "../../components/ProjectCard/ProjectCard";
 
 const Projects = () => {
   const [data, setData] = useState<ProjectData[]>([]);
@@ -9,14 +11,14 @@ const Projects = () => {
   useEffect(() => {
     fetch("/projects.json")
       .then((response) => response.json())
-      .then((jsonData) => setData(jsonData))
-      .catch((error) => console.log(error));
+      .then(setData)
+      .catch(console.error);
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>Projects - Owen Simpson</title>
+        <title>Projects | Owen Simpson</title>
       </Helmet>
       <main className="project-page">
         <h1>Personal Projects</h1>

@@ -1,8 +1,5 @@
-import "./styles/Contact.css";
-export enum ContactTypes {
-  LinkedIn = "linkedin",
-  Email = "email",
-}
+import "./Contact.css";
+import { ContactTypes } from "./types";
 
 interface ContactProps {
   socials: {
@@ -12,7 +9,7 @@ interface ContactProps {
   }[];
 }
 
-const Contact = ({ socials }: ContactProps) => {
+export default function Contact({ socials }: ContactProps) {
   return (
     <div className="contact-container">
       <h3>Contact Me</h3>
@@ -33,6 +30,4 @@ const Contact = ({ socials }: ContactProps) => {
       ))}
     </div>
   );
-};
-
-export default Contact;
+}
