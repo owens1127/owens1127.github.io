@@ -1,12 +1,5 @@
 import "./ProjectCard.css";
-
-export type ProjectData = {
-  name: string;
-  description: string;
-  url?: string;
-  repository: string;
-  images?: string[];
-};
+import { ProjectData } from "./types";
 
 const ProjectCard = ({
   project: { name, description, url, repository, images },
