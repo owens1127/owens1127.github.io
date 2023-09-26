@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import HomeButton from "./HomeButton";
 
-const Home = () => {
+export default function Home() {
   return (
     <Container component="main" sx={{ padding: 2 }}>
       <Typography gutterBottom variant="h1">
@@ -34,6 +34,4 @@ const Home = () => {
       </Container>
     </Container>
   );
-};
-
-export default Home;
+}

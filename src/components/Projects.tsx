@@ -3,7 +3,7 @@ import { ProjectData } from "../types";
 import { useState, useEffect } from "react";
 import { Container } from "@mui/material";
 
-const Projects = () => {
+export default function Project() {
   const [data, setData] = useState<ProjectData[]>([]);
 
   useEffect(() => {
@@ -30,6 +30,4 @@ const Projects = () => {
       ))}
     </Container>
   );
-};
-
-export default Projects;
+}

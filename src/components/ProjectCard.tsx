@@ -8,11 +8,11 @@ import {
 } from "@mui/material";
 import { ProjectData } from "../types";
 
-const ProjectCard = ({
+export default function ProjectCard({
   project: { name, description, url, repository },
 }: {
   project: ProjectData;
-}) => {
+}) {
   return (
     <Card
       variant="elevation"
@@ -62,6 +62,4 @@ const ProjectCard = ({
       </Container>
     </Card>
   );
-};
-
-export default ProjectCard;
+}
