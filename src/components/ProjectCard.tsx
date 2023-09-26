@@ -6,7 +6,7 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-import { ProjectData } from "./types";
+import { ProjectData } from "../types";
 
 const ProjectCard = ({
   project: { name, description, url, repository },

@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { ProjectData } from "./types";
+import { ProjectData } from "../types";
 import { useState, useEffect } from "react";
 import { Container } from "@mui/material";
 

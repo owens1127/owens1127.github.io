@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import { HashRouter } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Home from "./components/Home";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects";
 
 export default function App() {
   return (
