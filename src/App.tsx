@@ -1,26 +1,21 @@
 import { Route, Routes } from "react-router";
-import { HashRouter } from "react-router-dom";
-import Projects from "./components/Projects/projects";
+import { BrowserRouter } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
-import Home from "./components/Home/home";
+import Home from "./components/Home";
+import Projects from "./components/Projects/projects";
 
 export default function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/projects" Component={Projects} />
-      </Routes>
-
+    <BrowserRouter>
       <Nav
-        items={[
+        pages={[
           {
             label: "Home",
             href: "/",
           },
           {
             label: "Projects",
-            href: "/#/projects",
+            href: "/projects",
           },
           {
             label: "Resume",
@@ -28,6 +23,10 @@ export default function App() {
           },
         ]}
       />
-    </HashRouter>
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/projects" Component={Projects} />
+      </Routes>
+    </BrowserRouter>
   );
 }
