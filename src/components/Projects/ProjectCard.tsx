@@ -9,7 +9,7 @@ import {
 import { ProjectData } from "./types";
 
 const ProjectCard = ({
-  project: { name, description, url, repository, images },
+  project: { name, description, url, repository },
 }: {
   project: ProjectData;
 }) => {
