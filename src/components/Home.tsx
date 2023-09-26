@@ -14,7 +14,14 @@ export default function Home() {
         for creating innovative and user-friendly applications.
       </Typography>
       <Container sx={{ padding: 2 }}>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 3,
+            flexWrap: "wrap",
+          }}
+        >
           <HomeButton link="/resume.pdf" newTab>
             Résumé
           </HomeButton>
