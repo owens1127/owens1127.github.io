@@ -19,7 +19,7 @@ const Home = () => {
             Résumé
           </HomeButton>
 
-          <HomeButton link="/projects">Projects</HomeButton>
+          <HomeButton link="/#/projects">Projects</HomeButton>
 
           <HomeButton link="https://www.linkedin.com/in/owen-s-simpson/">
             LinkedIn

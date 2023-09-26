@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Home from "./components/Home";
-import Projects from "./components/Projects/projects";
+import Projects from "./components/Projects/Projects";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav
         pages={[
           {
@@ -15,11 +15,11 @@ export default function App() {
           },
           {
             label: "Projects",
-            href: "/projects",
+            href: "/#/projects",
           },
           {
             label: "Resume",
-            href: "resume.pdf",
+            href: "/resume.pdf",
           },
         ]}
       />
@@ -27,6 +27,6 @@ export default function App() {
         <Route path="/" Component={Home} />
         <Route path="/projects" Component={Projects} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
