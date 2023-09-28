@@ -1,15 +1,18 @@
 [
   {
-    "name": "NU Carpool",
-    "description": "CarpoolNU is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
-    "url": "https://carpoolnu.com/",
-    "repository": "https://github.com/sandboxnu/nucarpool"
+    "name": "Pasta Zaddy Mobile App",
+    "description": "The Pasty Zaddy Mobile app is an iOS app created for Pasta Zaddy, a private pasta chef and influencer. It is developed with react native and a firebase backend. It is quite early in development so there is not much else to add at this time."
   },
   {
     "name": "RaidHub",
     "description": "RaidHub is a fullstack collaborative project I worked on with a team of 3. This website serves as a centralized platform for Destiny 2 players, providing them with the ability to view leaderboards for Worlds First races and track their raid statistics sourced from the Bungie API. Inspired by a similar site, we sought to deliver a faster experience.\n I was resposibile for the front end work. By leveraging the power of TypeScript, I ensured strong typing and reliable code throughout the development process. With React, I crafted intuitive and responsive user interfaces, while Next.js optimized performance and offered server-side rendering capabilities. RaidHub is designed to empower Destiny 2 communities by enabling players to showcase their achievements, monitor their progress, and engage in healthy competition. It was a rewarding experience to contribute to this project and create a valuable resource for the community.",
-    "url": "https://alpha.raidhub.app/",
-    "repository": "https://github.com/Raid-Hub/RaidHub-Website"
+    "url": "https://alpha.raidhub.app/"
+  },
+  {
+    "name": "NU Carpool",
+    "description": "CarpoolNU is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
+    "url": "https://carpoolnu.com/",
+    "repository": "https://github.com/sandboxnu/nucarpool"
   },
   {
     "name": "Bungie.net Core",

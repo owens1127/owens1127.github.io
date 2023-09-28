@@ -55,9 +55,11 @@ export default function ProjectCard({
               View Project
             </Button>
           )}
-          <Button variant="contained" href={repository} target="_blank">
-            Repository
-          </Button>
+          {repository && (
+            <Button variant="contained" href={repository} target="_blank">
+              Repository
+            </Button>
+          )}
         </Box>
       </Container>
     </Card>
