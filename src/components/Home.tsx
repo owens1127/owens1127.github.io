@@ -1,9 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import HomeButton from "./HomeButton";
 
-const Home = () => {
+export default function Home() {
   return (
-    <Container component="main" sx={{ padding: 2 }}>
+    <Container component="main" sx={{ padding: 5 }}>
       <Typography gutterBottom variant="h1">
         Owen Simpson
       </Typography>
@@ -11,10 +11,18 @@ const Home = () => {
         Hi, I'm Owen! I am Computer Science student from <em>Boston, MA</em>{" "}
         currently studying at Northeastern University with an expected
         graduation in May 2025. I am an experienced web developer with a passion
-        for creating innovative and user-friendly applications.
+        for creating user-friendly applications to solve problems or fill a
+        niche.
       </Typography>
       <Container sx={{ padding: 2 }}>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 3,
+            flexWrap: "wrap",
+          }}
+        >
           <HomeButton link="/resume.pdf" newTab>
             Résumé
           </HomeButton>
@@ -34,6 +42,4 @@ const Home = () => {
       </Container>
     </Container>
   );
-};
-
-export default Home;
+}

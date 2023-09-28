@@ -8,11 +8,11 @@ import {
 } from "@mui/material";
 import { ProjectData } from "../types";
 
-const ProjectCard = ({
+export default function ProjectCard({
   project: { name, description, url, repository },
 }: {
   project: ProjectData;
-}) => {
+}) {
   return (
     <Card
       variant="elevation"
@@ -55,13 +55,13 @@ const ProjectCard = ({
               View Project
             </Button>
           )}
-          <Button variant="contained" href={repository} target="_blank">
-            Repository
-          </Button>
+          {repository && (
+            <Button variant="contained" href={repository} target="_blank">
+              Repository
+            </Button>
+          )}
         </Box>
       </Container>
     </Card>
   );
-};
-
-export default ProjectCard;
+}
