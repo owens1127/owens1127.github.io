@@ -2,7 +2,8 @@
   {
     "name": "RaidHub",
     "description": "RaidHub stands out as a milestone project in my portfolio, highlighting my expertise in full-stack development. It demonstrates my knowledge across the tech stack: front end, backend, cloud, continuous integration, and much more. As the lead developer on the team, I played a pivotal role in conceiving and bringing to life RaidHub—a centralized platform designed for the Destiny 2 gaming community, providing advanced in-game statistics, leaderboards for World First races, custom achievements, and more, all sourced from the Bungie API.\n\nThe cornerstone of the site is a robust REST API. This API seamlessly connects to our performant PostgreSQL database, which boasts an impressive record with over 500GB of connected records, including over 400 million raid reports and 20 million players. The scale of this database served as a massive technical hurdle, one which we are proud to have surpassed. In addition, our Golang microservices form a solid infrastructure. Notably, our web crawler seamlessly sends out over 250 web requests per second, updating the database with live records. This ensures players receive real-time updates on live activities, creating a dynamic and engaging user experience.\n\nOn the front-end, TypeScript serves as the bedrock for code reliability and early bug detection through well-defined linters and code formatters. We harnessed the power of Next.js through both server-side rendering and static generation in conjunction with Vercel’s CDN to deliver fully hydrated pages from the edge, all optimized for SEO. The integration of tRPC streamlined communication between the front-end and our serverless backend, resulting in type-safe data retrieval, input sanitization/validation, and a seamless developer experience. Additionally, react-query's efficient data caching mechanism optimized performance for client side data fetching, ensuring quick load times and enabling optimistic updates.",
-    "url": "https://staging.raidhub.app/?_vercel_share=3mXQ5mjUmjl7LoBJC38RcXX28kYy3gxk",
+    "url": "https://raidhub.io/",
+    "repository": "https://github.com/raid-hub",
     "images": ["/raidhub.png"],
     "tech": {
       "REST API": {
@@ -35,6 +36,7 @@
     "name": "NU Carpool",
     "description": "CarpoolNU is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
     "repository": "https://github.com/sandboxnu/nucarpool",
+    "url": "https://www.carpoolnu.com/",
     "images": ["/carpool.png"],
     "tech": {
       "Full Stack": ["Next.js", "NextAuth", "tRPC"],

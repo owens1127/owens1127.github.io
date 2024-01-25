@@ -59,7 +59,7 @@ const Home = () => {
             LinkedIn
           </HomeButton>
 
-          <HomeButton link="https://github.com/owensimpson" newTab>
+          <HomeButton link="https://github.com/owens1127" newTab>
             GitHub
           </HomeButton>
 
