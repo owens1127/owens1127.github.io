@@ -1,32 +1,19 @@
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-
-export type NavItem = {
-  label: string;
-  href: string;
-};
-
-export default function Nav({ pages }: { pages: NavItem[] }) {
+export default function Nav() {
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: "flex" }}>
-            {pages.map((page) => (
-              <Button
-                key={page.label}
-                href={page.href}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page.label}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <header className="sticky top-0 z-10 border-b border-gray-700 bg-gray-800">
+      <nav className="container mx-auto flex items-center justify-end px-4 py-4">
+        <div className="space-x-4">
+          <a href="/#" className="hover:text-gray-300">
+            About
+          </a>
+          <a href="/#/projects" className="hover:text-gray-300">
+            Projects
+          </a>
+          <a href="#/resume" className="hover:text-gray-300">
+            Resume
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 }
