@@ -1,13 +1,8 @@
 export type ProjectData = {
-  name: string;
+  title: string;
   description: string;
   url?: string;
   repository?: string;
-  images?: string[];
-  tech?: Tech;
+  image: string;
+  tech: string[];
 };
-
-export type Tech = Record<
-  string,
-  string | string[] | Record<string, string | string[]>
->;
