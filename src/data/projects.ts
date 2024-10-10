@@ -15,7 +15,7 @@ export const projects: ProjectData[] = [
       "Clickhouse",
       "Cloudflare",
       "TypeScript",
-      "Epxress.js",
+      "Express.js",
       "Grafana",
       "GitHub Actions",
       "Next.js",
@@ -51,6 +51,14 @@ export const projects: ProjectData[] = [
     tech: ["Next.js", "NextAuth", "tRPC", "Prisma", "MySQL", "TailwindCSS"],
   },
   {
+    title: "Good Dog Licensing",
+    description: "Good Dog is a free, Northeastern University run, no-risk platform designed for independent media-makers and musicians. It helps media-makers find great music for their projects while allowing musicians to expand their audience. Artists retain 100% of all copyrights in their music, and the platform uses a carefully developed music license to facilitate collaboration. My team at Sandbox is tasked with rebuilding the website from scratch.",
+    repository: "https://github.com/sandboxnu/good-dog-licensing",
+    image: "/gdl.png",
+    // url: "https://good-dog-licensing.vercel.app/",
+    tech: ["Next.js", "Postgres", "Sendgrid", "Vercel"],
+  },
+  {
     title: "Bungie.net Core",
     description:
       "The Bungie.net Core project is node npm package that I created. It leverages TypeScript and OpenAPI v3.0 tools to auto-generate TypeScript definitions for the Bungie.net API. These defintions speed up the development process of web applications working with the Bungie.net platform due to strong type safety. The project's main focus is on automating the generation of TypeScript definitions with up-to-date documentation for developers, but I have also created utility functions to access the manifest and manage authentication. Additionally, I optimized the npm package to reduce bundle size and improve overall performance. By incorporating live updates, the project ensures seamless support for new game systems in Destiny 2, enabling developers stay up-to-date with the latest features and functionality.",
@@ -61,11 +69,10 @@ export const projects: ProjectData[] = [
   },
   {
     title: "Tweeter",
-    description:
-      "Tweeter is an application I developed that utilizes webscraping techniques, the OpenAI API, and Twitter API. The project revolves around simulating tweets from a given user by analyzing and learning from their existing tweets. To achieve this, I implemented a web scraping mechanism to collect a user's tweets, which was necessary due to Twitter's ludicrous API costs. I then utilized the OpenAI's GPT-3.5 Turbo engine using their API to generate realistic tweet simulations based on the collected data. Finally, I integrated the Twitter API to automatically post these simulated tweets on the user's behalf. This project allowed me to explore the possibilities of AI-generated content and showcase my skills in API integration and web scraping. It was a fun  endeavor that combined various technologies to create an engaging and funny experience for myself and my friends.",
+    description: "Good Dog Licensing is ",
     repository: "https://github.com/owens1127/tweeter",
-    image: "/tweeter.png",
     tech: ["Pupeeter", "OpenAI", "Twitter API"],
+    image: "/tweeter.png",
   },
   {
     title: "PZC Mobile App",
