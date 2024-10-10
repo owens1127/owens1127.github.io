@@ -44,7 +44,7 @@ export const projects: ProjectData[] = [
   {
     title: "NU Carpool",
     description:
-      "CarpoolNU is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
+      "Carpool is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
     repository: "https://github.com/sandboxnu/nucarpool",
     url: "https://www.carpoolnu.com/",
     image: "/carpool.png",
