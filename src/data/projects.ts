@@ -4,7 +4,7 @@ export const projects: ProjectData[] = [
   {
     title: "RaidHub",
     description:
-      "RaidHub stands out as a milestone project in my portfolio, highlighting my expertise in full-stack development. It showcases my knowledge across the tech stack: front end, backend, cloud, continuous integration, and much more. As the lead developer on the team, I play a pivotal role in bringing RaidHub to life and maintaining the application.\n\nThe site is a centralized platform designed for the Destiny 2 gaming community, providing advanced in-game statistics, leaderboards for World First races, custom achievements, and more, all sourced from the Bungie API.\n\nThe cornerstone of the site is a robust REST API. This API seamlessly connects to our performant PostgreSQL database, which handles over 500GB of connected records, including over 300 unique raid summaries and 20 million players. The scale of this database presents a massive technical hurdle, one we are proud to surpass.\n\nOur microservices wirtten in Go form a solid infrastructure. Notably, our web crawler efficiently sends out over 250 web requests per second, updating the database with live records. This ensures players receive real-time updates on live activities, creating a dynamic and engaging user experience.\n\nA messaging queue system built on RabbitMQ handles many post-processing tasks such as insertion into Clickhouse and fetching incomplete data\n\nOn the front end, TypeScript serves as the bedrock for code reliability and early bug detection through well-defined linters and code formatters. We harness the power of Next.js through both server-side rendering and static generation in conjunction with Vercel's CDN to deliver fully hydrated pages from the edge, all optimized for SEO. The integration of tRPC streamlines communication between the front end and our serverless backend, resulting in type-safe data retrieval, input sanitization/validation, and a seamless developer experience. Additionally, react-query's efficient data caching mechanism optimizes performance for client-side data fetching, ensuring quick load times and enabling optimistic updates.",
+      "RaidHub is a showcase of my expertise across full-stack web development. It demonstrates my knowledge across the tech stack: front end, backend, cloud, continuous integration, and much more. As the primary developer on the team, I played a pivotal role in bringing RaidHub to life and maintaining the application.\n\nThe site is a centralized platform designed for the Destiny 2 gaming community, providing advanced in-game statistics, leaderboards for World First races, custom achievements, and more.\n\nThe cornerstone of the site is a robust REST API. This API connects to our highly optimized PostgreSQL database, managing over 600GB of connected records, including over 300 unique raid summaries and 20 million players. The scale of this database presents a massive technical hurdle, one we are proud to surpass.\n\nOur microservices written in Go form a solid infrastructure. Notably, our web crawler efficiently sends out over 250 web requests per second at peak times, updating the database with live records. This ensures players receive real-time updates on live activities, creating a dynamic and engaging user experience.\n\nA message queue system built on RabbitMQ handles many post-processing tasks such as insertion into Clickhouse and fetching incomplete data.\n\nOn the front end, battled-tested TypeScript config serves as the bedrock for code reliability and early bug detection through well-defined linters and code formatters. We harness the power of Next.js through both server-side rendering and static generation in conjunction with Vercel's CDN to deliver fully hydrated pages from the edge, all optimized for SEO. The integration of tRPC streamlines communication between the front end and our serverless backend-for-the-frontend, resulting in type-safe data retrieval, input sanitization/validation, and a seamless developer experience. Additionally, industry standard tools such as react-query efficiently manage data caching mechanisms and optimizes performance for client-side data fetching, ensuring quick load times and enabling optimistic updates.",
     url: "https://raidhub.io/",
     repository: "https://github.com/raid-hub",
     image: "/raidhub.png",
@@ -34,6 +34,7 @@ export const projects: ProjectData[] = [
     image: "/sydney.png",
     tech: [
       "Python",
+      "Jupyter Notebook",
       "Pandas",
       "AWS Sagemaker",
       "AWS S3",
@@ -51,12 +52,22 @@ export const projects: ProjectData[] = [
     tech: ["Next.js", "NextAuth", "tRPC", "Prisma", "MySQL", "TailwindCSS"],
   },
   {
+    title: "Next Bungie Auth",
+    description:
+      "Next Bungie Auth is a highly configurable and extensible Typescript authentication library that I created to simplify the process of authenticating users with the Bungie.net API. After spinning up numerous projects and implementing auth multiple times, I decided to create a library that would streamline the process. The library uses OAuth 2.0 to authenticate users and store their session data in cookies. It is available for all standard package managers and is designed to be easy to use and integrate with any Next.js application. The library is fully documented and includes examples to help developers get started quickly. It is actively maintained and updated to ensure compatibility with the latest versions of Next.js and the Bungie.net API.",
+    url: "https://www.npmjs.com/package/next-bungie-auth",
+    repository: "https://github.com/owens1127/next-bungie-auth",
+    image: "/next-bungie-auth.png",
+    tech: ["TypeScript", "npm", "OAuth", "Cookies", "Next.js"],
+  },
+  {
     title: "Good Dog Licensing",
-    description: "Good Dog is a free, Northeastern University run, no-risk platform designed for independent media-makers and musicians. It helps media-makers find great music for their projects while allowing musicians to expand their audience. Artists retain 100% of all copyrights in their music, and the platform uses a carefully developed music license to facilitate collaboration. My team at Sandbox is tasked with rebuilding the website from scratch.",
+    description:
+      "Good Dog is a free, Northeastern University run, no-risk platform designed for independent media-makers and musicians. It helps media-makers find great music for their projects while allowing musicians to expand their audience. Artists retain 100% of all copyrights in their music, and the platform uses a carefully developed music license to facilitate collaboration. My team at Sandbox is tasked with rebuilding the website from scratch.",
     repository: "https://github.com/sandboxnu/good-dog-licensing",
     image: "/gdl.png",
-    // url: "https://good-dog-licensing.vercel.app/",
-    tech: ["Next.js", "Postgres", "Sendgrid", "Vercel"],
+    url: "https://good-dog-licensing.vercel.app/",
+    tech: ["Next.js", "Postgres", "Sendgrid", "react-email", "Vercel"],
   },
   {
     title: "Bungie.net Core",
@@ -69,9 +80,10 @@ export const projects: ProjectData[] = [
   },
   {
     title: "Tweeter",
-    description: "Good Dog Licensing is ",
+    description:
+      "Tweeter is a Twitter bot that I created to generate tweets using OpenAI's GPT-3. The bot uses Puppeteer to scrape tweets from a specified Twitter account and sends them to the OpenAI API to generate a response. The bot then posts the response as a tweet from the specified account. The project is designed to help users generate parody tweets and have a quick laugh. The bot is fully automated and runs on a schedule to generate tweets at regular intervals",
     repository: "https://github.com/owens1127/tweeter",
-    tech: ["Pupeeter", "OpenAI", "Twitter API"],
+    tech: ["Pupeeter", "OpenAI", "Twitter API", "cron"],
     image: "/tweeter.png",
   },
   {
@@ -87,7 +99,7 @@ export const projects: ProjectData[] = [
       "Ada-2 is a discontinued JavaScript-based Discord bot designed to enhance the gaming experience for players in Destiny 2 by notifying them daily when rare items are sold by in-game vendors. The application was deployed to the cloud using AWS, supporting over 100 guilds and 2000 users daily. I optimized the algorithm to run using a Cron job to efficiently handle over 1000 API requests in less than 5 minutes, in order to efficiently serve a large user base once per day. Additionally, I actively managed operations by prioritizing feature requests and addressing bugs through various public forums.",
     repository: "https://github.com/owens1127/Ada2",
     image: "/ada.png",
-    tech: ["Discord.js", "SQLite", "AWS Lambda", "Cron"],
+    tech: ["Discord.js", "SQLite", "AWS Lambda", "cron"],
   },
   {
     title: "Wooper",

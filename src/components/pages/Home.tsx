@@ -1,4 +1,15 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { jobs } from "@/data/jobs";
 import {
   Github,
   Linkedin,
@@ -7,17 +18,14 @@ import {
   FolderKanban,
   MapPin,
 } from "lucide-react";
-
-export default function Component() {
+export default function Page() {
   return (
     <div className="flex flex-grow flex-col bg-gray-900 text-gray-100">
       <main className="flex-grow">
-        <section className="py-20 text-center">
+        <section className="p-8 text-center md:py-20">
           <h1 className="mb-4 text-5xl font-bold">Hi, I'm Owen 👋</h1>
-          <p className="mb-4 text-xl">
-            Full-Stack Developer, Problem Solver, Tech Enthusiast
-          </p>
-          <p className="mb-8 text-lg">
+          <p className="mb-6 text-xl">I build software to solve problems</p>
+          <p className="mb-4 text-lg">
             <span className="font-semibold text-blue-200">
               Northeastern University
             </span>
@@ -62,6 +70,43 @@ export default function Component() {
             >
               <Mail className="mr-2 h-4 w-4" /> Email
             </Button>
+          </div>
+        </section>
+        <section className="p-8 text-center md:py-20">
+          <h2 className="mb-10 text-center text-3xl font-bold">
+            Work Experience
+          </h2>
+          <div className="relative mx-auto max-w-min">
+            <Separator
+              orientation="horizontal"
+              className="absolute left-0 right-0 top-1/2 hidden -translate-y-1/2 md:block"
+            />
+            <Separator
+              orientation="vertical"
+              className="absolute bottom-0 left-1/2 top-0 block -translate-x-1/2 md:hidden"
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12">
+              {jobs.map((job, index) => (
+                <Card
+                  key={index}
+                  className={`w-72 border-gray-700 bg-gray-800 ${
+                    index === 0 ? "border-blue-300" : ""
+                  }`}
+                >
+                  <CardHeader className="p-4 md:p-6">
+                    <CardTitle className="text-lg text-blue-200">
+                      {job.title}
+                    </CardTitle>
+                    <CardDescription className="text-md text-gray-300">
+                      {job.company}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-4 pt-0 md:p-6">
+                    <p className="text-sm text-gray-400">{job.dateRange}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
       </main>

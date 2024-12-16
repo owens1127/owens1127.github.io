@@ -106,7 +106,7 @@ export default function ProjectCard(project: ProjectData) {
               className="flex items-center"
             >
               <ExternalLinkIcon className="mr-2 h-4 w-4" />
-              Live Demo
+              Visit
             </a>
           </Button>
         )}
