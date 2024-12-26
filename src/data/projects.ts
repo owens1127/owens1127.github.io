@@ -27,6 +27,15 @@ export const projects: ProjectData[] = [
     ],
   },
   {
+    title: "Destiny 2: Wrapped, 2024",
+    description:
+      "Destiny 2: Wrapped is a client-rendered app that generates a Spotify Wrapped-style report for Destiny 2 players. Players login to the site using their Bungie.net account, and the app generates a report based on data found in their in-game activity history. The report includes statistics such as total playtime, favorite activities, and character usage. The app is built with React and styled with Tailwind CSS and (framer) motion.\n\nThe site received visits from over 100,000 unique users within the first week of launch, and the project was featured across many game journalism websites. The official Destiny 2 Twitter account also shared the project, leading to a significant increase in traffic. The project was a great success, and I am proud of the work I put into it.",
+    url: "https://wrapped.report",
+    image: "d2wrapped.png",
+    tech: ["React", "Tailwind CSS", "motion"],
+    repository: "https://github.com/owens1127/destiny-wrapped",
+  },
+  {
     title: "Sydney Housing Market Model",
     description:
       "This tool assists Sydney renters by predicting average market rental prices and identifying agents offering properties above or below the market rate, helping users make informed decisions amid rising inflation. The project was created as part of my study abroad in Sydney in July 2024. Our model was built with Python scripts utiziling pandas to clean and configure the data, before being created through AWS Sagemaker. We used the Chalice framework to deploy a static page to AWS lambda. The final model posts an RMSE of $160, which isfairly accurate. The project was a great learning experience, allowing me to explore the world of data science and machine learning, and apply my skills to a real-world problem.",

@@ -1,8 +1,5 @@
-interface Job {
-  title: string;
-  company: string;
-  dateRange: string;
-}
+import { Job } from "@/types";
+
 export const jobs: Job[] = [
   {
     title: "Software Engineer I",

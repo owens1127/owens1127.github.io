@@ -20,9 +20,9 @@ import {
 } from "lucide-react";
 export default function Page() {
   return (
-    <div className="flex flex-grow flex-col bg-gray-900 text-gray-100">
-      <main className="flex-grow">
-        <section className="p-8 text-center md:py-20">
+    <div className="flex flex-grow flex-col bg-gray-900 p-6 text-gray-100 md:p-16">
+      <main className="flex-grow space-y-12 md:space-y-24">
+        <div className="text-center">
           <h1 className="mb-4 text-5xl font-bold">Hi, I'm Owen 👋</h1>
           <p className="mb-6 text-xl">I build software to solve problems</p>
           <p className="mb-4 text-lg">
@@ -71,8 +71,8 @@ export default function Page() {
               <Mail className="mr-2 h-4 w-4" /> Email
             </Button>
           </div>
-        </section>
-        <section className="p-8 text-center md:py-20">
+        </div>
+        <div className="text-center">
           <h2 className="mb-10 text-center text-3xl font-bold">
             Work Experience
           </h2>
@@ -108,7 +108,7 @@ export default function Page() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   );

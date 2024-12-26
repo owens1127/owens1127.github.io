@@ -45,7 +45,7 @@ export default function ProjectCard(project: ProjectData) {
                   {paragraph}
                 </p>
               ))
-            : `${project.description.slice(0, 100)}...`}
+            : `${project.description.slice(0, 150)}...`}
         </CardDescription>
         <Button
           variant="ghost"
