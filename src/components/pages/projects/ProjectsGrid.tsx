@@ -1,5 +1,3 @@
-"use client";
-
 import { useProjects } from "@/context/projects";
 import ProjectCard from "./ProjectCard";
 
