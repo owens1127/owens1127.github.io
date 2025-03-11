@@ -41,9 +41,13 @@ export default function ProjectCard(project: ProjectData) {
         <CardDescription className="mt-2 text-gray-300">
           {isExpanded
             ? project.description.split("\n\n").map((paragraph, index) => (
-                <p className="mb-2" key={index}>
-                  {paragraph}
-                </p>
+                <p
+                  className="mb-2"
+                  key={index}
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph,
+                  }}
+                />
               ))
             : `${project.description.slice(0, 150)}...`}
         </CardDescription>

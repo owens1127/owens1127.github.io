@@ -52,6 +52,26 @@ export const projects: ProjectData[] = [
     ],
   },
   {
+    title: "D2 Loot Tracker",
+    description:
+      "D2 Loot Tracker is a web app created to pool data on RNG loot tables. The app itself mainly exists to collect unbiased data from players in the background, and the interesting parts were done with manual scripting.\n\nPerforming a chi-square analysis on over 200,000 unique items demonstrated an extremely strong argument that there was a flaw in the random number generation in Destiny 2's code. Developers at <a class='text-blue-400' href=https://www.bungie.net/7/en/News/Article/dev_insights_perk_rng_issue target=_blank>Bungie investigated this issue</a> after it was flagged by me, and they identified a engine-level bug in pseudo-RNG responsible for the loot table generation in Destiny 2",
+    url: "https://d2-loot-tracker.vercel.app/",
+    repository:
+      "https://github.com/owens1127/Destiny-2-Season-Pass-Wayback-Machine",
+    image: "/vs-trend.png",
+    tech: ["SQLite", "numpy", "OAuth", "React", "shadcn", "Tailwind CSS"],
+  },
+  {
+    title: "Destiny 2 Season Pass Wayback Machine",
+    description:
+      "The Destiny 2 Season Pass Wayback Machine is a Chrome and Firefox browser extension with over 10,000 users that allows users to view and claim their historic, but rightfully earned, season pass rewards in Destiny 2\n\nThe tool works by injecting a script into the Bungie.net website that loads a React app. The app loads all previous season pass data and allows a users to claim hidden rewards using reverse-engineered API endpoints.",
+    url: "https://addons.mozilla.org/en-US/firefox/addon/d2-season-pass-wayback-machine/",
+    repository:
+      "https://github.com/owens1127/Destiny-2-Season-Pass-Wayback-Machine",
+    image: "/wayback.png",
+    tech: ["Manifest V3", "WebExtensions", "Vite", "TypeScript", "React"],
+  },
+  {
     title: "NU Carpool",
     description:
       "Carpool is a web app developed by Sandbox for Northeastern students seeking to carpool to their co-ops in the Boston area. As part of the development team, I collaborated on integrating new features using the T3 web stack (Typescript, React, Next.js, tRPC, Prisma.js, TailwindCSS). I played a key role in developing and implementing essential features such as a favoriting system, invitation system, and carpool group management using Prisma.js + MySQL. Additionally, I contributed to the intuitive user interface, allowing users to easily favorite others, join carpool groups, and manage their profiles. Lastly, I worked towards delivering the final product to our client, MentorHub at Northeastern, for summer 2023.",
